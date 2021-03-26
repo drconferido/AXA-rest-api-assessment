@@ -1,0 +1,28 @@
+GET http://localhost:3000/applicants
+
+###
+POST http://localhost:3000/goodmorning-axa-dev.azure-api.net/register
+Content-Type: application/json
+
+{
+    "Name": "Loida Torres",
+    "Email": "ida@gmail.com",
+    "Mobile": "09774706334",
+    "positionApplied": "Call Center",
+    "Source": "VXI"
+}
+
+###
+GET http://localhost:3000/goodmorning-axa-dev.azure-api.net/register
+
+###
+DELETE http://localhost:3000/applicants/605cceec4c74a73c08060bd9
+
+
+###
+PATCH  http://localhost:3000/goodmorning-axa-dev.azure-api.net/register/605cd3b607e72431d84b1eaa
+Content-Type: application/json
+
+{
+    "Name": "Dominic Repotente Conferido"
+}
